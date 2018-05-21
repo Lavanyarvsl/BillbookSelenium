@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="none">
+  <test name="Test">
+    <classes>
+      <class name="com.jackfruit.billbook.scripts.PhotoGraph"/>
+      <class name="com.jackfruit.billbook.scripts.TestUserRoleListBox"/>
+      <class name="com.jackfruit.billbook.scripts.TestAddEmployee"/>
+      <class name="com.jackfruit.billbook.scripts.TestLoginButtonIsPresent"/>
+      <class name="com.jackfruit.billbook.scripts.TestIncludeListBox"/>
+      <class name="com.jackfruit.billbook.scripts.TestJobTitle"/>
+      <class name="com.jackfruit.billbook.scripts.LoginLogoutTest"/>
+      <class name="com.jackfruit.billbook.scripts.TestCreateDeleteEmp"/>
+      <class name="com.jackfruit.billbook.scripts.TestSearchButton"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

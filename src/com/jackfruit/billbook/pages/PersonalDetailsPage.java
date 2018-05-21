@@ -1,0 +1,32 @@
+package com.jackfruit.billbook.pages;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.testng.Assert;
+
+import com.jackfruit.billbook.base.HomePage;
+
+
+
+public class PersonalDetailsPage extends HomePage{
+
+	public PersonalDetailsPage(WebDriver driver) {
+		super(driver);
+	}
+	@FindBy(id="personal_txtEmpFirstName")
+	private WebElement firstName;
+	
+	@FindBy(id="personal_txtEmployeeId")
+	private WebElement empID;
+	
+	public void checkFirstName(String eFN){
+		String aFN = firstName.getAttribute("value");
+		Assert.assertEquals(aFN, eFN);
+		log.info("PASS: FirstName is matching");
+	}
+	
+	public String getEmpID(){
+		return empID.getAttribute("value");
+	}
+}
